@@ -5,12 +5,12 @@
   vars:
         schedule: "5 * * * *"
         cron_user: vagrant
-        logfile: /tmp/ansible-pull.log
-        workdir: /tmp/
+        logfile: /home/vagrant/ansible-pull.log
+        workdir: /home/vagrant/
         repo_url: https://github.com/yutaka-j/ansible-pull-test.git
         
   tasks:
         - name: Install emacs
           action: apt pkg=emacs state=installed
         - name: Echo commans
-          action: command /bin/echo Hello >> /tmp/echo.log
+          action: command /bin/echo Hello >> /home/vagrant/echo.log
