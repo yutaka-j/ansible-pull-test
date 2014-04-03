@@ -1,0 +1,1 @@
+Ansible-pullテスト用リポジトリ
