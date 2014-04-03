@@ -13,4 +13,4 @@
         - name: Install emacs
           action: apt pkg=emacs state=installed
         - name: Echo commans
-          action: command /bin/echo Hello >> /home/vagrant/echo.log
+          action: command /bin/echo Hello
